@@ -10,6 +10,7 @@ import { ListPage } from '../pages/list/list';
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
 import { LoginComponent } from '../pages/login/login';
+import { HttpModule } from '@angular/http';
 
 @NgModule({
   declarations: [
@@ -18,10 +19,11 @@ import { LoginComponent } from '../pages/login/login';
     ItemDetailsPage,
     ListPage,
     LoginComponent,
+    
   ],
   imports: [
     BrowserModule,
-    IonicModule.forRoot(MyApp),
+    IonicModule.forRoot(MyApp),HttpModule,
   ],
   bootstrap: [IonicApp],
   entryComponents: [
