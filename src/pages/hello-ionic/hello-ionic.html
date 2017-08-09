@@ -1,0 +1,29 @@
+<ion-header>
+  <ion-navbar>
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>PROVIDER LOGIN</ion-title>
+  </ion-navbar>
+</ion-header>
+
+
+<ion-content padding>
+
+  <ion-list inset>
+
+  <ion-item>
+    <ion-label>Username</ion-label>
+    <ion-input type="text" [(ngModel)]="login.username" ></ion-input>
+  </ion-item>
+
+  <ion-item>
+    <ion-label>Password</ion-label>
+    <ion-input type="password" [(ngModel)]="login.password"></ion-input>
+  </ion-item>
+
+</ion-list>
+
+<button block="" color="primary" ion-button="" (click)="onLogin()" class="disable-hover button button-ios button-default button-default-ios button-block button-block-ios button-ios-primary">
+  <span class="button-inner">Sign In</span><div class="button-effect"></div></button>
+</ion-content>
